@@ -64,7 +64,6 @@
     z-index: 100;
     top: 35%;
     transform: translateY(-50%);
-    padding-left: 15px;
 }
 
 
@@ -231,9 +230,6 @@
     opacity: 1;
     
 }
-
-
-
 
 .scroll__down {
     width: 126px;
