@@ -1,0 +1,61 @@
+@import "./reset.css";
+@import "./main.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./media.css";
+@import "./burger.css";
+@import "./parallax.css";
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Gilroy';
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.none{
+    display: none !important;
+}
+
+:root{
+    --container__max_width:1800px;
+    --container__padding: 15px;
+
+    --main__container__width:1492px;
+    --footer__container__width:1492px;
+
+    --burger_width: 40px;
+    --burger_height: 30px;
+}
+
+
+[class*="__container"]{
+    max-width: var(--container__max_width);
+    margin: 0 auto;
+    padding: 0px var(--container__padding);
+}
+
+[class*="__main_container"]{
+    max-width: var(--main__container__width);
+    margin: 0 auto;
+    padding: 0px var(--container__padding);
+}
+
+[class*="__footer_container"]{
+    max-width: var(--footer__container__width);
+    margin: 0 auto;
+    padding: 0px var(--container__padding);
+}
+
+body a{
+    transition: all 0.s linear;
+}
+body a:hover{
+    color: rgb(212, 166, 107);
+}
+
+ 
+
+
+

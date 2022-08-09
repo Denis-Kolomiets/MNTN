@@ -1,0 +1,263 @@
+
+.header {
+    margin-top: 64px;
+    margin-bottom: 843px;
+    position: relative;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    
+}
+.logo {
+    width: 108px;
+    height: 24px;
+}
+
+.menu__list {
+    display: flex;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.2%;
+    gap: 40px;
+}
+ .menu__list a {
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+.menu__list a:hover {
+    color: rgb(212, 166, 107);
+
+    transition: all 0.1s linear;
+    width: 100%;
+    border-bottom: 3px solid rgb(212, 166, 107) ;
+} 
+
+
+.account__icone {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.2%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.account__icone:hover svg path{
+    fill: rgb(212, 166, 107);
+    transition: 0.5s;
+}
+
+/*----navigation and social--------*/
+
+.social {
+    position: fixed;
+    z-index: 100;
+    top: 35%;
+    transform: translateY(-50%);
+    padding-left: 15px;
+}
+
+
+
+.follow{
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.2%;
+    writing-mode: vertical-lr;
+}
+.social ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social ul *:not(:last-child) {
+    margin-bottom: 24px;
+}
+.follow a{
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+.follow a:hover {
+    color: rgb(212, 166, 107);
+}
+
+.social ul li:hover svg path {
+    fill: rgb(212, 166, 107);
+    transition: 0.5s;
+}
+
+
+.navigation {
+    position: relative;
+}
+
+.scroll {
+    position: fixed;
+    z-index: 100;
+    top: 35%;
+    right: 32px;
+    transform: translateY(-50%);
+    padding-right: 15px;
+    
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.2%;
+}
+.navigation::after{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 240px;
+    background-color: #fff;
+    right: -32px;
+    top: 0;
+    opacity: 0.5;
+}
+
+.scroll ul li {
+    height: 60px;
+    line-height: 60px;
+    transition: 0.2s ease-in;
+
+    position: relative;
+}
+
+
+
+
+.navigation ul li a{
+    color: #fff; 
+    transition: 0.3s ease 0s;
+}
+.navigation ul li a.active::after { 
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 60px;
+    background-color: #fff;
+    right: -32px;
+}
+.navigation ul {
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+}
+
+.navigation ul li a:hover{
+    color: rgb(212, 166, 107);
+}
+
+.navigation ul li a.active {
+    color: rgb(212, 166, 107);
+}
+
+.nav__toggle {
+    display: none;
+}
+/*--------SITE__TITLE-----------*/
+
+
+.site-title__container {
+    display: flex;
+    justify-content: center;
+}
+
+.site-title__content{
+    max-width: 950px;
+    margin-top: 198px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.site-title__category {
+    position: relative;
+    
+    font-family: 'Gilroy';
+    color: #FBD784;
+    letter-spacing: 6px;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 122.2%;
+    padding-left: 104px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.site-title__content.active_scroll .site-title__category{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.site-title__category::after{
+    position: absolute;
+    content: '';
+    width: 72px;
+    height: 2px;
+    left: 0;
+    top: 11px;
+    background-color: #FBD784;;
+}
+.site-title__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 85px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.9s ease 0s;
+}
+
+.site-title__content.active_scroll .site-title__title{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    
+}
+
+
+
+
+.scroll__down {
+    width: 126px;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122.2%;
+    color: #FFFFFF;
+    position: relative;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1.4s ease 0s;
+}
+.site-title__content.active_scroll .scroll__down{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.scroll__down::after{
+    position: absolute;
+    content: '';
+    background-image: url(../img/header/arrow__down.svg);
+    width: 16px;
+    height: 24px;
+    right: 0;
+}
