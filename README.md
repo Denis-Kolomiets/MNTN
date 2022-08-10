@@ -1,3 +1,3 @@
 # MNTN
 
-denis-kolomiets.github.io/mntn/
+https://denis-kolomiets.github.io/MNTN/
